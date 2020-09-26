@@ -1,0 +1,3 @@
+StackOverflow este o platformă web care permite utilizatorilor să însușească/împărtășească noțiuni legate de programare pe o paletă întinsă de tehnologii. Având o comunitate largă,
+deseori majoritatea problemelor pe care le întâlnim au fost deja lansate în discuție și soluționate, iar mai mult de atât, datorită modului de organizare putem avea certitudinea că
+informațiile puse la dispoziție sunt reale. 
