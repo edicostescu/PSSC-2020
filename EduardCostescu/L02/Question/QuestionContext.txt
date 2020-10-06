@@ -1,0 +1,3 @@
+-> Utilizatorul dorește să lanseze o întrebare în cadrul aplicației:
+	#Întrebarea este ACCEPTATĂ, iar aceasta urmează a fi publicată. Utilizatorii ce manifestă un interes pentru topic-ul asociat sunt notificați;
+	#Întrebarea este REFUZATĂ, conținutul acesteia urmând a fi verificat; 

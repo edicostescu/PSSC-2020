@@ -1,0 +1,3 @@
+-> Utilizatorul urmează să execute o căutare după nume/tipul job-ului dorit utilizând sau nu filtrele de căutare:
+-> Utilizatorul va primi ca rezultat o listă de job-uri corespunzătoare numelui/tipului și a filtrelor aplicate;
+-> Companiile primite ca rezultat urmează a fi notificate de asemenea;

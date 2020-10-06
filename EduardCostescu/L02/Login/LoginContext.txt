@@ -1,0 +1,5 @@
+-> Utilizatorul dorește să se autentifice sau să se înregistreze, alegând una din următoarele opțiuni:
+	   #Login   : utilizatorul se va autentifica utilizând contul deja existent în cadrul aplicației sau prin intermediul platformelor asociate (Google, Facebook, Git);
+	   #Sign up : utilizatorul se va inregistra în cadrul aplicației completând formularul de înregistrare sau prin intermediul conturilor deja existente în platformelor				   		   asociate (Google, Facebook, Git);
+
+-> Datele în urma procesului de autentificare/înregistrare sunt acceptate, utilizatorul fiind redirecționat spre conținutul aplicației, sau refuzate.
