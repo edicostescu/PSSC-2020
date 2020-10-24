@@ -1,3 +1,5 @@
+using System.Linq;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Question.Domain.CreateQuestionWorkflow {
@@ -9,15 +11,15 @@ namespace Question.Domain.CreateQuestionWorkflow {
         public string category_ { get; set; }
         
         [Required]
-        public string tags_ { get; set; }
+        public IEnumerable<string> tags_ { get; set; }
         
         [Required]
         public string question_ { get; set; }
 
-        public QuestionMO (string title, string category, string tags, string question) {
+        public QuestionMO (string title, string category, List<string> tags, string question) {
             title_ = title;
             category_ = category;
-            tags_ = tags;
+            tags_ = tags.AsEnumerable();
             question_ = question;
         }
     };

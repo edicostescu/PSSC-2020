@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question.Domain", "Question
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question.Domain.Test", "Question.Domain.Test\Question.Domain.Test.csproj", "{F9C85F6E-0ADC-43B0-AD8E-F796B7F1C817}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Domain", "User.Domain\User.Domain.csproj", "{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{F9C85F6E-0ADC-43B0-AD8E-F796B7F1C817}.Release|x64.Build.0 = Release|Any CPU
 		{F9C85F6E-0ADC-43B0-AD8E-F796B7F1C817}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9C85F6E-0ADC-43B0-AD8E-F796B7F1C817}.Release|x86.Build.0 = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|x64.Build.0 = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C6F2DB3-3B78-411D-8D34-F167A8A69CBE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

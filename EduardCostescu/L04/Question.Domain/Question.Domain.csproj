@@ -8,4 +8,8 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0-rc.2.20475.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\User.Domain\User.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
