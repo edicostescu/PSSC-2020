@@ -36,9 +36,11 @@ namespace Question.Domain.CreateQuestionWorkflow {
             else if (votesMap_.ContainsKey(fromUser.userId_)) {
                 if (vote) {
                     votes_ += 2;
+                    votesMap_[fromUser.userId_] = true;
                 }
                 else {
                     votes_ -= 2;
+                    votesMap_[fromUser.userId_] = false;
                 }
             }
             else {
