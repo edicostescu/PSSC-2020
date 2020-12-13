@@ -7,6 +7,9 @@ using StackUnderflow.Domain.Core.Contexts.Question.ReplyQuestion;
 using StackUnderflow.EF.Models;
 using System;
 using System.Threading.Tasks;
+using Orleans;
+using StackUnderflow.API.AspNetCore.Grain;
+using LanguageExt;
 
 namespace StackUnderflow.API.AspNetCore.Controllers
 {
@@ -16,11 +19,13 @@ namespace StackUnderflow.API.AspNetCore.Controllers
     {
         private readonly IInterpreterAsync _interpreter;
         private readonly StackUnderflowContext _dbContext;
+        private readonly IClusterClient _client;
 
-        public QuestionController(IInterpreterAsync interpreter, StackUnderflowContext dbContext)
+        public QuestionController(IInterpreterAsync interpreter, StackUnderflowContext dbContext, IClusterClient client)
         {
             _interpreter = interpreter;
             _dbContext = dbContext;
+            _client = client;
         }
 
         [HttpPost("question")]
@@ -42,5 +47,12 @@ namespace StackUnderflow.API.AspNetCore.Controllers
                 notCreated => (ActionResult)BadRequest("Question not created"),
                 invalidRequest => BadRequest("Invalid request"));
         }
+
+        private TryAsync<ConfirmationAcknowledgement> SendEmail(ConfirmationLetter letter) => async () =>
+        {
+            var emailSender = _client.GetGrain<IEmailSender>(0);
+            await emailSender.SendEmailAsync(letter.letter_);
+            return new ConfirmationAcknowledgement(Guid.NewGuid().ToString());
+        };
     }
 }
